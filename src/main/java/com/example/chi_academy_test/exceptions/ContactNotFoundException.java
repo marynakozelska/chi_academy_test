@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 /**
  * Allow the controllers to return a 403 if an operation is forbidden.
 */
-@ResponseStatus(HttpStatus.FORBIDDEN)
-public class OperationNotAllowedException extends RuntimeException {
-    public OperationNotAllowedException(String message) {
+@ResponseStatus(HttpStatus.NOT_FOUND)
+public class ContactNotFoundException extends RuntimeException {
+    public ContactNotFoundException(String message) {
         super(message);
     }
 }

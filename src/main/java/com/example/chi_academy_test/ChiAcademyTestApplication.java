@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ChiAcademyTestApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ChiAcademyTestApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ChiAcademyTestApplication.class, args);
+    }
 
 }

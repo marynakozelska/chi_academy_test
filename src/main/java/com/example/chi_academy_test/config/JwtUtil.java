@@ -1,4 +1,4 @@
-package com.example.democafeclientsystem.config;
+package com.example.chi_academy_test.config;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -17,8 +17,6 @@ import java.util.function.Function;
 
 @Component
 public class JwtUtil {
-//    jwt - json web token
-
     private String SECRET_KEY = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855";
 
     public String extractUsername(String token) {
