@@ -6,7 +6,7 @@ Design and implement “Phone contacts” application. Phone contacts applicatio
 2. Contact emails. One contact may have multiple emails
 3. Contact phone number. One contact may have multiple phone numbers
 
-** User should have a possibility to: **
+**User should have a possibility to:**
 1. Register in the app, login and password should be provided during registration
 2. Login to the app
 3. Add new contact
@@ -14,7 +14,7 @@ Design and implement “Phone contacts” application. Phone contacts applicatio
 5. Delete existing contact
 6. Get list of existing contacts
 
-** The app to be implemented should: **
+**The app to be implemented should:**
 - Use any relational database to store contacts data. Take into account that schema should be designed in accordance with 1st and 2nd normal forms
 - Use Spring Boot, Spring Web, Spring Security and Spring Data + Hibernate
 - Should give access only to authorized users, so each user should have his own list of phone contacts (Use Spring Security)
@@ -25,7 +25,7 @@ Contact names should be unique
 
 ## Some examples of server usage:
 
-** Authorization: **
+**Authorization:**
 
 HTTP POST localhost:8080/auth
 
@@ -34,7 +34,7 @@ HTTP POST localhost:8080/auth
     “password”: “yyy”
 }
 
-** Registration: **
+**Registration:**
 
 HTTP POST localhost:8080/register
 
@@ -43,7 +43,7 @@ HTTP POST localhost:8080/register
     “password”: “yyy”
 }
 
-** User adds a new contact: **
+**User adds a new contact:**
 
 HTTP POST localhost:8080/contacts
 
