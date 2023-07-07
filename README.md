@@ -52,3 +52,20 @@ HTTP POST localhost:8080/contacts
     "emails": ["xxx@xxx.com", "yyy@yyy.com"],
     "phones": ["+380939333333", "+380939333334", "+380939333335"]
 }
+
+## How to run?
+Java version: 17
+
+Run in terminal
+
+```
+mvn clean install
+```
+```
+docker-compose up --build
+```
+
+Run tests:
+```
+mvn test
+```
