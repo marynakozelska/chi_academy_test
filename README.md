@@ -30,8 +30,8 @@ Contact names should be unique
 HTTP POST localhost:8080/auth
 
 {
-    “login”: “xxx”,
-    “password”: “yyy”
+    "login": "xxx",
+    "password": "yyy"
 }
 
 **Registration:**
@@ -39,8 +39,8 @@ HTTP POST localhost:8080/auth
 HTTP POST localhost:8080/register
 
 {
-    “login”: “xxx”,
-    “password”: “yyy”
+    "login": "xxx",
+    "password": "yyy"
 }
 
 **User adds a new contact:**
@@ -48,7 +48,7 @@ HTTP POST localhost:8080/register
 HTTP POST localhost:8080/contacts
 
 {
-    “name”: “xxx”,
-    “emails”: [“xxx@xxx.com”, “yyy@yyy.com”],
-    “phones”: [“+380939333333”,”“+380939333334”, “+380939333335”]
+    "name": "xxx",
+    "emails": ["xxx@xxx.com", "yyy@yyy.com"],
+    "phones": ["+380939333333", "+380939333334", "+380939333335"]
 }
