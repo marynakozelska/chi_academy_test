@@ -134,18 +134,21 @@ public class ContactService {
         ContactDTO contactDto = new ContactDTO();
         contactDto.setName(contact.getName());
 
-        LinkedHashSet<String> contactEmails = new LinkedHashSet<>(contact.getEmails().size());
-        for (Email e : contact.getEmails()) {
-            contactEmails.add(e.getAddress());
+        if (contact.getEmails() != null) {
+            LinkedHashSet<String> contactEmails = new LinkedHashSet<>(contact.getEmails().size());
+            for (Email e : contact.getEmails()) {
+                contactEmails.add(e.getAddress());
+            }
+            contactDto.setEmails(contactEmails);
         }
 
-        LinkedHashSet<String> contactPhones = new LinkedHashSet<>(contact.getPhones().size());
-        for (Phone e : contact.getPhones()) {
-            contactPhones.add(e.getNumber());
+        if (contact.getPhones() != null) {
+            LinkedHashSet<String> contactPhones = new LinkedHashSet<>(contact.getPhones().size());
+            for (Phone e : contact.getPhones()) {
+                contactPhones.add(e.getNumber());
+            }
+            contactDto.setPhones(contactPhones);
         }
-
-        contactDto.setEmails(contactEmails);
-        contactDto.setPhones(contactPhones);
 
         return contactDto;
     }
